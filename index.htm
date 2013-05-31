@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Gebo Admin Panel - Login Page</title>
+        <title>Gebo 管理面板 - 登录页</title>
     
         <!-- Bootstrap framework -->
             <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"  />
@@ -31,96 +31,116 @@
 		<div class="login_box">
 			
 			<form action="dashboard.htm" method="post" id="login_form">
-				<div class="top_b">Sign in to Gebo Admin</div>    
+				<div class="top_b">Gebo 管理后台会员登录</div>    
 				<div class="alert alert-info alert-login">
-					Clear username and password field to see validation.
+					将用户名和密码删除提交可查看表单验证功能.
 				</div>
 				<div class="cnt_b">
 					<div class="formRow">
 						<div class="input-prepend">
-							<span class="add-on"><i class="icon-user"></i></span><input type="text" id="username" name="username" placeholder="Username" value="John Smith" />
+							<span class="add-on"><i class="icon-user"></i></span><input type="text" id="username" name="username" placeholder="请输入帐号" value="张某人" />
 						</div>
 					</div>
 					<div class="formRow">
 						<div class="input-prepend">
-							<span class="add-on"><i class="icon-lock"></i></span><input type="password" id="password" name="password" placeholder="Password" value="password" />
+							<span class="add-on"><i class="icon-lock"></i></span><input type="password" id="password" name="password" placeholder="请输入密码" value="password" />
 						</div>
 					</div>
 					<div class="formRow clearfix">
-						<label class="checkbox"><input type="checkbox" /> Remember me</label>
+						<label class="checkbox"><input type="checkbox" /> 记住我</label>
 					</div>
 				</div>
 				<div class="btm_b clearfix">
-					<button class="btn btn-inverse pull-right" type="submit">Sign In</button>
-					<span class="link_reg"><a href="#reg_form">Not registered? Sign up here</a></span>
+					<button class="btn btn-inverse pull-right" type="submit">登录</button>
+					<span class="link_reg"><a href="#reg_form">还未注册? 点击注册</a></span>
 				</div>  
 			</form>
 			
 			<form action="http://tzd-themes.com/gebo_admin/index.php?uid=1&page=dashboard" method="post" id="pass_form" style="display:none">
-				<div class="top_b">Can't sign in?</div>    
+				<div class="top_b">无法登录?</div>    
 					<div class="alert alert-info alert-login">
-					Please enter your email address. You will receive a link to create a new password via email.
+					请输入你的email地址. 您将会收到一封密码修改的邮件，点击其中的链接进行修改.
 				</div>
 				<div class="cnt_b">
 					<div class="formRow clearfix">
 						<div class="input-prepend">
-							<span class="add-on">@</span><input type="text" placeholder="Your email address" />
+							<span class="add-on">@</span><input type="text" placeholder="输入email地址" />
 						</div>
 					</div>
 				</div>
 				<div class="btm_b tac">
-					<button class="btn btn-inverse" type="submit">Request New Password</button>
+					<button class="btn btn-inverse" type="submit">重置密码</button>
 				</div>  
 			</form>
 			
 			<form action="http://tzd-themes.com/gebo_admin/index.php?uid=1&page=dashboard" method="post" id="reg_form" style="display:none">
-				<div class="top_b">Sign up to Gebo Admin</div>
+				<div class="top_b">用户注册</div>
 				<div class="alert alert-login">
-					By filling in the form bellow and clicking the "Sign Up" button, you accept and agree to <a data-toggle="modal" href="#terms">Terms of Service</a>.
+					填写以下表单，点击“注册”，即表示你已经接受并同意 <a data-toggle="modal" href="#terms">服务条款</a>.
 				</div>
 				<div id="terms" class="modal hide fade" style="display:none">
 					<div class="modal-header">
 						<a class="close" data-dismiss="modal">×</a>
-						<h3>Terms and Conditions</h3>
+						<h3>授权协议与服务条款</h3>
 					</div>
 					<div class="modal-body">
 						<p>
-							Nulla sollicitudin pulvinar enim, vitae mattis velit venenatis vel. Nullam dapibus est quis lacus tristique consectetur. Morbi posuere vestibulum neque, quis dictum odio facilisis placerat. Sed vel diam ultricies tortor egestas vulputate. Aliquam lobortis felis at ligula elementum volutpat. Ut accumsan sollicitudin neque vitae bibendum. Suspendisse id ullamcorper tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum at augue lorem, at sagittis dolor. Curabitur lobortis justo ut urna gravida scelerisque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vitae ligula elit.
-							Pellentesque tincidunt mollis erat ac iaculis. Morbi odio quam, suscipit at sagittis eget, commodo ut justo. Vestibulum auctor nibh id diam placerat dapibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vel nunc sed tellus rhoncus consectetur nec quis nunc. Donec ultricies aliquam turpis in rhoncus. Maecenas convallis lorem ut nisl posuere tristique. Suspendisse auctor nibh in velit hendrerit rhoncus. Fusce at libero velit. Integer eleifend sem a orci blandit id condimentum ipsum vehicula. Quisque vehicula erat non diam pellentesque sed volutpat purus congue. Duis feugiat, nisl in scelerisque congue, odio ipsum cursus erat, sit amet blandit risus enim quis ante. Pellentesque sollicitudin consectetur risus, sed rutrum ipsum vulputate id. Sed sed blandit sem. Integer eleifend pretium metus, id mattis lorem tincidunt vitae. Donec aliquam lorem eu odio facilisis eu tempus augue volutpat.
+							中文版授权协议 适用于中文用户
+							版权所有 (c) 2010-2012，连上网络
+							保留所有权利。
+
+							感谢您选择本产品。
+							无论个人或组织、盈利与否、用途如何（包括以学习和研究为目的），均需仔细阅读本协议，在理解、同意、并遵守本协议的全部条款后，方可开始使用。
+
+							本授权协议适用且仅适用于本产品发布版本，连上网络拥有对本授权协议的最终解释权。
+
+							I.协议许可的权利 
+							  1.您可以在完全遵守本最终用户授权协议的基础上，将本软件应用于商业用途，第三方软件请自行购买授权。
+							  2.您可以在协议规定的约束和限制范围内修改本产品源代码(如果被提供的话)或界面风格以适应您的公司要求。
+							  3.获得商业授权之后，您可以将本软件应用于商业用途，同时依据所购买的授权类型中确定的技术支持期限、技术支持方式和技术支持内容，自购买时刻起，在技术支持期限内拥有通过指定的方式获得指定范围内的技术支持服务。商业授权用户享有反映和提出意见的权力，相关意见将被作为首要考虑，但没有一定被采纳的承诺或保证。
+							  4.未获商业授权之前，不得将本软件用于商业用途。购买商业授权请登陆http://meetrice.cnblogs.com/meetrice 参考相关说明，也可以联系QQ:582197  email:meetrice@qq.com了解详情。
+
+							II.有限担保和免责声明 
+							  1.本软件及所附带的文件是作为不提供任何明确的或隐含的赔偿或担保的形式提供的。
+							  2.用户出于自愿而使用本软件，您必须了解使用本软件的风险，在尚未购买产品技术服务之前，我们不承诺提供任何形式的技术支持、使用担保，也不承担任何因使用本软件而产生问题的相关责任。
+							  3.不对使用本软件中对接的第三方系统负责，请如涉及到第三方软件请自行购买。
+							有关本产品最终用户授权协议、商业授权与技术服务的详细内容，均由官方网站独家提供。本人拥有在不事先通知的情况下，修改授权协议和服务价目表的权力，修改后的协议或价目表对自改变之日起的新授权用户生效。
+
+							电子文本形式的授权协议如同双方书面签署的协议一样，具有完全的和等同的法律效力。您一旦开始安装与使用本产品，即被视为完全理解并接受本协议的各项条款，在享有上述条款授予的权力的同时，受到相关的约束和限制。协议许可范围以外的行为，将直接违反本授权协议并构成侵权，我们有权随时终止授权，责令停止损害，并保留追究相关责任的权力。
 						</p>
 					</div>
 					<div class="modal-footer">
-						<a data-dismiss="modal" class="btn" href="#">Close</a>
+						<a data-dismiss="modal" class="btn" href="#">关闭</a>
 					</div>
 				</div>
 				<div class="cnt_b">
 					
 					<div class="formRow">
 						<div class="input-prepend">
-							<span class="add-on"><i class="icon-user"></i></span><input type="text" placeholder="Username" />
+							<span class="add-on"><i class="icon-user"></i></span><input type="text" placeholder="输入帐号" />
 						</div>
 					</div>
 					<div class="formRow">
 						<div class="input-prepend">
-							<span class="add-on"><i class="icon-lock"></i></span><input type="text" placeholder="Password" />
+							<span class="add-on"><i class="icon-lock"></i></span><input type="text" placeholder="输入密码" />
 						</div>
 					</div>
 					<div class="formRow">
 						<div class="input-prepend">
-							<span class="add-on">@</span><input type="text" placeholder="Your email address" />
+							<span class="add-on">@</span><input type="text" placeholder="输入email地址" />
 						</div>
-						<small>The e-mail address is not made public and will only be used if you wish to receive a new password.</small>
+						<small>这个email地址不会被公开，仅被用来接受新的密码。</small>
 					</div>
 					 
 				</div>
 				<div class="btm_b tac">
-					<button class="btn btn-inverse" type="submit">Sign Up</button>
+					<button class="btn btn-inverse" type="submit">注册</button>
 				</div>  
 			</form>
 			
 			<div class="links_b links_btm clearfix">
-				<span class="linkform"><a href="#pass_form">Forgot password?</a></span>
-				<span class="linkform" style="display:none">Never mind, <a href="#login_form">send me back to the sign-in screen</a></span>
+				<span class="linkform"><a href="#pass_form">忘记密码?</a></span>
+				<span class="linkform" style="display:none">不想继续, <a href="#login_form">回到登录界面</a></span>
 			</div>
 			
 		</div>
